@@ -37,7 +37,7 @@ describe('ScranAdvisor', () => {
             "latitude": 52.475159788534754,
             "longitude": -1.8966440079643896
         };
-        const actual = scranAdvisor.restaurantByName();
+        const actual = scranAdvisor.restaurantByName("Happy Lamb Hot Pot");
         expect(actual).toEqual(expected);
     })
 
@@ -118,7 +118,7 @@ describe('ScranAdvisor', () => {
               longitude: -4.255168672861043
             }
           ];
-          const actual = scranAdvisor.nameRestaurantsInCity();
+          const actual = scranAdvisor.nameRestaurantsInCity("Glasgow");
           expect(actual).toEqual(expected);
     })
 

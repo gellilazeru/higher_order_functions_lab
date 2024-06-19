@@ -15,6 +15,7 @@ ScranAdvisor.prototype.nameRestaurant = function(restaurant){
     return this.restaurants.map((restaurant) => restaurant.name);
 }
 
+//cities in Glasgow
 ScranAdvisor.prototype.nameRestaurantsInCity = function (restaurantGlasgow) {
     return this.restaurants.filter((restaurant) => restaurant.location.town == restaurantGlasgow);
 }
