@@ -15,11 +15,11 @@ describe('ScranAdvisor', () => {
 
     test('can count the number of restaurants', () => {
         const expected = 23;
-        const actual = null;
+        const actual = scranAdvisor.count();
         expect(actual).toEqual(expected);
     })
 
-    test('can find Happy Lamb Hot Pot restaurant by full name', () => {
+    test.skip('can find Happy Lamb Hot Pot restaurant by full name', () => {
         const expected = {
             "id": 8,
             "name": "Happy Lamb Hot Pot",

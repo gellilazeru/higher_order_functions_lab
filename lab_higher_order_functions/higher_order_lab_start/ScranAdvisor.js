@@ -3,10 +3,13 @@ const ScranAdvisor = function(restaurants){
 }
 
 // Add methods to prototype
-const ScranAdvisorCount = function(restaurants){
-    return restaurants.count;
+ScranAdvisor.prototype.count = function(restaurants){
+    return this.restaurants.length;
 };
 
+ScranAdvisor.prototype.findRestaurant = function(restaurants) {
+    return this.restaurants.fin
+}
 
 
 module.exports = ScranAdvisor;
