@@ -3,14 +3,18 @@ const ScranAdvisor = function(restaurants){
 }
 
 // Add methods to prototype
+
+// count all restaurants
 ScranAdvisor.prototype.count = function(restaurants){
     return this.restaurants.length;
 };
 
+// give full details on given restaurant
 ScranAdvisor.prototype.restaurantByName = function(restaurantName){
     return this.restaurants.find((restaurant) => restaurant.name === restaurantName);
 };
 
+//naming all restaurants
 ScranAdvisor.prototype.nameRestaurant = function(restaurant){
     return this.restaurants.map((restaurant) => restaurant.name);
 }
